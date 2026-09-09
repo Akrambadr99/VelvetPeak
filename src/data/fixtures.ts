@@ -19,7 +19,7 @@ export function createAtlasFixtures(
 
   const workspace = {
     id: ids.workspace('operations'),
-    name: 'Teamora Workspace',
+    name: 'VelvetPeak Workspace',
     slug: 'atlas-operations',
     createdAt,
   }
