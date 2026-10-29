@@ -1,6 +1,66 @@
+<p align="center">
+  <img src="docs/media/project-banner.svg" alt="VelvetPeak — Projects, issues, and team workflows in one workspace." width="100%">
+</p>
+
+<p align="center"><strong>Projects, issues, and team workflows in one workspace.</strong></p>
+
+<p align="center"><a href="#overview">Overview</a> · <a href="#explore">Explore</a> · <a href="#getting-started">Getting started</a></p>
+
+<p align="center"><code>React</code> · <code>TypeScript</code> · <code>Vite</code></p>
+
+## Overview
+
+**VelvetPeak** is a React and TypeScript workspace for project management, issue tracking, collaboration, and operational reporting.
+
+![VelvetPeak: actual local application overview with fixture data](docs/media/overview.png)
+
+*Actual application capture using local fixture data.*
+
+## Explore
+
+- Workspace dashboard
+- Project ownership and workflows
+- Issue search, filters, and bulk actions
+- Kanban board
+- Comments, mentions, and notifications
+- Analytics and governance views
+
+## Getting started
+
+Node.js requirement: `>=20.19 <21`. Use the package manager specified in [package.json](package.json).
+
+```bash
+git clone https://github.com/Akrambadr99/VelvetPeak.git
+cd VelvetPeak
+npm ci
+npm run dev
+```
+
+Open the URL printed by the development server.
+
+### Development commands
+
+| Command | Script defined by this project |
+| --- | --- |
+| `npm run dev` | `vite` |
+| `npm run typecheck` | `tsc -b` |
+| `npm run lint` | `eslint . --max-warnings 0` |
+| `npm run test` | `vitest run` |
+| `npm run test:e2e` | `playwright test` |
+| `npm run build` | `npm run typecheck && vite build && node scripts/check-entry-budget.mjs` |
+
+See the project guide below for browser installation and any service-specific setup.
+
+## Project notes
+
+This application shares the Atlas Ops / Taskora project foundation. It is presented as a related workspace variant, not as an independently originated codebase. Application data is served by the local in-memory gateway; browser preferences use local storage.
+
+<details>
+<summary><strong>Project guide, technical details, and existing documentation</strong></summary>
+
 # VelvetPeak
 
-VelvetPeak is a private operations and project-management application for
+VelvetPeak is an operations and project-management application for
 projects, issues, workflow governance, collaboration, and operational analytics.
 It is a single React application built with strict TypeScript, Vite, Node.js 20,
 and npm.
@@ -91,3 +151,9 @@ behavior, cache coordination, concurrency, and rendered user interactions.
 Playwright exercises independent cross-feature journeys through the running
 application, including keyboard and focus behavior. Coverage and a production
 entry-bundle budget are part of the validation gate.
+
+</details>
+
+---
+
+<p align="center"><a href="https://github.com/Akrambadr99?tab=repositories">Explore the portfolio</a></p>
